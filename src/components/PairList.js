@@ -1,9 +1,8 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
-export class DevsList extends Component {
+export class PairList extends Component {
 	render() {
 		return (
 			<ul>
@@ -11,6 +10,10 @@ export class DevsList extends Component {
 			</ul>
 		);
 	}
+}
+
+PairList.propTypes = {
+	devs: PropTypes.array.isRequired
 }
 
 function mapStateToProps(state) {
@@ -22,4 +25,4 @@ function mapStateToProps(state) {
 export default connect(
 	mapStateToProps,
 	null
-)(DevsList);
+)(PairList);
