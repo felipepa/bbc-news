@@ -11,6 +11,7 @@ export class AddDevForm extends Component {
     	this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
+	// Trigger addDevAction
 	handleSubmit(e) {
 		e.preventDefault();
 		this.props.addDevAction(e.target.name.value);
