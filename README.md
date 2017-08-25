@@ -1,4 +1,7 @@
 # WS2020 Test
+
+Run `npm install` to install dependencies
+
 Run `npm run build` to generate transpiled files. These files are generated using Babel, so they should work in a range of browsers.
 
 Run `npm start` to run in local server.
